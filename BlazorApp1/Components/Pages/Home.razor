@@ -1,0 +1,32 @@
+﻿@page "/"
+
+
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <p>You are admin!</p>
+    </Authorized>
+    <NotAuthorized>
+        <p>You are not an admin.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+<AuthorizeView>
+    <Authorized>
+        <p>You are authenticated.</p>
+    </Authorized>
+    <NotAuthorized>
+        <p>You are not authenticated.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code{
+
+
+}
